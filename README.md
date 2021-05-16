@@ -7,13 +7,13 @@
 + 3 AdonisJS
 
 
-Ce repo est un dupplicatioon du [repo](https://github.com/RomainLanz/lmhb-web-stack) de [RomainLanz](https://github.com/RomainLanz)
+Ce repo est un dupplication du [repo](https://github.com/RomainLanz/lmhb-web-stack) de [RomainLanz](https://github.com/RomainLanz)
 
 
 Atelier effectué via la chaine de [Tonygo_](https://www.youtube.com/channel/UC0yiy-XPDRVAgLaAiA8kvrQ)
 
 
-lien sur la session "LMHB #3: MONTER UNE APP WEB RAPIDEMENT AVEC ADONIS.JS FEAT @ROMAINLANZ (ROMAIN LANZ)" : https://www.youtube.com/watch?v=vcrjgZezaI0 
+Lien sur la session "LMHB #3: MONTER UNE APP WEB RAPIDEMENT AVEC ADONIS.JS FEAT @ROMAINLANZ (ROMAIN LANZ)" : https://www.youtube.com/watch?v=vcrjgZezaI0 
 
 ## Source :
 
