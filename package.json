@@ -24,6 +24,7 @@
   "homepage": "https://github.com/damienSavoldelli/lmbh3-adonis#readme",
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-conventional": "^12.1.4"
+    "@commitlint/config-conventional": "^12.1.4",
+    "husky": "^6.0.0"
   }
 }
