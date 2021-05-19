@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/damienSavoldelli/lmbh3-adonis/issues"
   },
-  "homepage": "https://github.com/damienSavoldelli/lmbh3-adonis#readme"
+  "homepage": "https://github.com/damienSavoldelli/lmbh3-adonis#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4"
+  }
 }
