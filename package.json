@@ -1,0 +1,25 @@
+{
+  "name": "lmbh3-adonis-workshop",
+  "version": "0.0.1",
+  "description": "https://www.youtube.com/watch?v=vcrjgZezaI0",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damienSavoldelli/lmbh3-adonis.git"
+  },
+  "keywords": [
+    "adonijs",
+    "tonygo_",
+    "romainlanz",
+    "workshop"
+  ],
+  "author": "damien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damienSavoldelli/lmbh3-adonis/issues"
+  },
+  "homepage": "https://github.com/damienSavoldelli/lmbh3-adonis#readme"
+}
