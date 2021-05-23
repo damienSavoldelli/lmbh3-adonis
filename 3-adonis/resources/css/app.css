@@ -29,12 +29,17 @@ a {
 }
 
 main {
-  max-width: 620px;
-  margin: auto;
+  /* margin: auto;
   height: 100vh;
   padding: 0 30px;
   align-items: center;
   display: flex;
+  justify-content: center; */
+}
+
+.hero{
+  padding: 0 30px;
+  align-items: center;
   justify-content: center;
 }
 
