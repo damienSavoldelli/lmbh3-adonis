@@ -1,0 +1,5 @@
+{
+    "eslint.workingDirectories": [
+      "./3-adonis/",
+    ]
+  }
