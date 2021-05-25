@@ -25,7 +25,7 @@ export default class UserValidator {
    */
   public schema = schema.create({
     email: schema.string({}, [rules.email(), rules.unique({ table: 'users', column: 'email' })]),
-    password: schema.string(),
+    password: schema.string({}, [rules.minLength(5)]),
   })
 
   /**
@@ -39,5 +39,10 @@ export default class UserValidator {
    * }
    *
    */
-  public messages = {}
+  public messages = {
+    required: 'The {{ field }} is required',
+    'email.email': 'email must has a good format',
+    'email.unique': 'emai not available',
+    'password.minLength': 'minmun 5 caracters',
+  }
 }
