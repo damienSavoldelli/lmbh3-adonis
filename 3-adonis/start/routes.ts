@@ -20,6 +20,7 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 import User from 'App/Models/User'
+import UserValidator from 'App/Validators/UserValidator'
 
 Route.get('/', async ({ view }) => {
   return view.render('welcome')
@@ -27,6 +28,10 @@ Route.get('/', async ({ view }) => {
 
 Route.on('/users').render('form')
 
-Route.post('/user', async ({ request }) => {
-  User.create(request.all())
+Route.post('/users', async ({ request, response }) => {
+  const paylod = await request.validate(UserValidator)
+
+  await User.create(paylod)
+
+  response.redirect().back()
 })
