@@ -10,7 +10,7 @@
     <div class="field">
       <label class="label">Email</label>
       <div class="control has-icons-left has-icons-right">
-        <input class="input is-danger" type="email" placeholder="Email input" value="" name="email">
+        <input class="input" type="email" placeholder="Email input" value="" name="email">
         <span class="icon is-small is-left">
           <i class="fas fa-envelope"></i>
         </span>
@@ -18,7 +18,9 @@
           <i class="fas fa-exclamation-triangle"></i>
         </span>
       </div>
-      <p class="help is-danger">This email is invalid</p>
+      @if(flashMessages.has('errors.email'))
+        <p class="help is-danger"> {{ flashMessages.get('errors.email') }} </p>
+      @end
     </div>
 
     <div class="field">
@@ -29,6 +31,9 @@
         </span>
         <input class="input" type="password" placeholder="Tour pass" name="password">
       </div>
+      @if(flashMessages.has('errors.password'))
+        <p class="help is-danger"> {{ flashMessages.get('errors.password') }} </p>
+      @end
     </div>
 
     <div class="field is-grouped">
@@ -39,6 +44,8 @@
         <button class="button is-link is-light">Cancel</button>
       </div>
     </div>
+
+    {{ inspect(flashMessages) }}
 
    </form>
   </div>
