@@ -16,8 +16,6 @@ export default class UsersController {
     // exec Stor validator
     const payload = await request.validate(StoreValidator)
 
-    console.log('data paylod', payload)
-
     await User.create(payload)
 
     return response.redirect().toRoute('UsersController.index')
