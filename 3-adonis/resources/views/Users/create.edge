@@ -1,16 +1,22 @@
 @layout('layouts/main')
-@set('title', 'Form page')
+@set('title', 'Create User')
 
 @section('body')
 <section class="hero">
   <div class="hero-body">
-   <form action="{{ route('/ex-users') }}" method="post">
+   <form action="{{ route('users.create') }}" method="post">
     {{ csrfField() }}
 
     <div class="field">
       <label class="label">Email</label>
       <div class="control has-icons-left has-icons-right">
-        <input class="input" type="email" placeholder="Email input" value="" name="email">
+        @if(typeof(flashMessages.get('email')) == 'string')
+          <input class="input" type="email" placeholder="Email input" value="{{ flashMessages.get('email') }}" name="email">
+        @else
+          <input class="input" type="email" placeholder="Email input" value="" name="email">
+        @endif
+
+
         <span class="icon is-small is-left">
           <i class="fas fa-envelope"></i>
         </span>
@@ -46,6 +52,7 @@
     </div>
 
     {{ inspect(flashMessages) }}
+    {{ inspect(session) }}
 
    </form>
   </div>

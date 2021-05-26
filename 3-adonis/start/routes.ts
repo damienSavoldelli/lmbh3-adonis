@@ -26,12 +26,17 @@ Route.get('/', async ({ view }) => {
   return view.render('welcome')
 })
 
-Route.on('/users').render('form')
+Route.on('/ex-users').render('form')
 
-Route.post('/users', async ({ request, response }) => {
+Route.post('/ex-users', async ({ request, response }) => {
   const paylod = await request.validate(UserValidator)
+  console.log('toto')
 
   await User.create(paylod)
 
   response.redirect().back()
 })
+
+Route.get('/users', 'UsersController.index')
+Route.get('/users/create', 'UsersController.create')
+Route.post('/users', 'UsersController.store').as('users.create')

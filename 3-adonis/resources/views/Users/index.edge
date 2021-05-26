@@ -1,0 +1,17 @@
+@layout('layouts/main')
+@set('title', 'Users List')
+
+@section('body')
+<ul>
+  @each(user in users)
+  <a href="">
+    <h3>{{ user.email }}</h3>
+  </a>
+
+  @endeach
+</ul>
+
+<div>
+  {{ inspect(users) }}
+</div>
+@endsection

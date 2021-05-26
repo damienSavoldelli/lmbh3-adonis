@@ -1,7 +1,7 @@
 import { schema, rules } from '@ioc:Adonis/Core/Validator'
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 
-export default class UserValidator {
+export default class StoreValidator {
   constructor(protected ctx: HttpContextContract) {}
 
   /*
@@ -39,5 +39,10 @@ export default class UserValidator {
    * }
    *
    */
-  public messages = {}
+  public messages = {
+    required: 'The {{ field }} is required',
+    'email.email': 'email must has a good format',
+    'email.unique': 'emai not available',
+    'password.minLength': 'minmun 5 caracters',
+  }
 }
