@@ -23,8 +23,9 @@ Lien sur la session "LMHB #3: MONTER UNE APP WEB RAPIDEMENT AVEC ADONIS.JS FEAT 
     - DOC ADONIS.JS https://adonisjs.com​
 
 + 🚡 Liens utiles:
-    - THE ADONIS.JS PODCAST: https://anchor.fm/the-adonisjs-podcast​
+    - THE ADONIS.JS PODCAST: https://anchor.fm/the-adonisjs-podcast
     - LE DISCORD ES-COMMUNITY: https://discord.com/invite/V2g89Ve​
+        - CODE OF CONDUCT: https://github.com/ES-Community/Code-of-conduct
 
 + 🏋️‍♂️ Réseaux du mentor RomainLanz:
     - TWITTER: https://twitter.com/romainlanz​
