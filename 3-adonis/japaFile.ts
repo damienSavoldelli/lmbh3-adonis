@@ -18,6 +18,6 @@ async function startHttpServer() {
  * Configure test runner
  */
 configure({
-  files: ['testsgst/**/*.spec.ts'],
+  files: ['tests/**/*.spec.ts'],
   before: [startHttpServer],
 })
