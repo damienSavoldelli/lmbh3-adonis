@@ -18,6 +18,7 @@ export default class UsersController {
 
     await User.create(payload)
 
+    session.flash('success', 'User created successfully')
     return response.redirect().toRoute('UsersController.index')
   }
 
