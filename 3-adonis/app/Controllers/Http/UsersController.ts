@@ -22,8 +22,13 @@ export default class UsersController {
     return response.redirect().toRoute('UsersController.index')
   }
 
-  public async show({}: HttpContextContract) {
-    return 'test'
+  public async show({ response, view, params }: HttpContextContract) {
+    const user = await User.find(params.id)
+
+    if (user) {
+      return view.render('Users/show', { user })
+    }
+    return response.status(404).send('not-found')
   }
 
   public async edit({}: HttpContextContract) {

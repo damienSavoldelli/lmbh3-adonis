@@ -40,3 +40,7 @@ Route.post('/ex-users', async ({ request, response }) => {
 Route.get('/users', 'UsersController.index')
 Route.get('/users/create', 'UsersController.create')
 Route.post('/users', 'UsersController.store').as('users.create')
+Route.get('/users/:id', 'UsersController.show').where('id', '^[0-9]+$').as('users.show')
+Route.get('/users/:id/edit', 'UsersController.edit').where('id', '^[0-9]+$').as('users.show')
+Route.put('/posts/:id', 'UsersController.update').where('id', '^[0-9]+$').as('users.update')
+Route.delete('/posts/:id', 'UsersController.destroy').where('id', '^[0-9]+$').as('users.destroy')
