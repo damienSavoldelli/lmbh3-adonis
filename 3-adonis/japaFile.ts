@@ -14,10 +14,22 @@ async function startHttpServer() {
   await new Ignitor(__dirname).httpServer().start()
 }
 
+// run only one spec file, if sepcified, or all
+function getTestFiles() {
+  let userDefined = process.argv.slice(2)[0]
+  if (!userDefined) {
+    return 'tests/**/*.spec.ts'
+  }
+
+  const regex = /\.spec$|\.spec\.ts$|\.spec\.js$|\.ts$|\.js$/
+
+  return `tests/${userDefined.replace(regex, '')}.spec.ts`
+}
+
 /**
  * Configure test runner
  */
 configure({
-  files: ['tests/**/*.spec.ts'],
+  files: getTestFiles(),
   before: [startHttpServer],
 })
