@@ -5,7 +5,7 @@ import supertest from 'supertest'
 const BASE_URL = `http://${process.env.HOST}:${process.env.PORT}`
 
 test.group('Welcome', () => {
-  test('ensure home page works', async (assert) => {
+  test('ensure home page (/) works', async (assert) => {
     /**
      * Make request
      */
