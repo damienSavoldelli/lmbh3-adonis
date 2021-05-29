@@ -4,14 +4,10 @@
 @section('body')
 <ul>
   @each(user in users)
-  <a href="">
+  <a id="user-{{ user.id }}"   href="{{ route('users.show', {id: user.id}) }}">
     <h3>{{ user.email }}</h3>
   </a>
 
   @endeach
 </ul>
-
-<div>
-  {{ inspect(users) }}
-</div>
 @endsection
