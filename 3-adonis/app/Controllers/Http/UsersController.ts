@@ -13,7 +13,7 @@ export default class UsersController {
   }
 
   public async store({ request, response, session }: HttpContextContract) {
-    // exec Stor validator
+    // exec Store validator
     const payload = await request.validate(StoreValidator)
 
     await User.create(payload)
